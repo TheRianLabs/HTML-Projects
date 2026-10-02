@@ -29,17 +29,17 @@
                 <input type="date" name="dob" id="dob" required>
             </div>
             <div>
-                <label>Gender:</label>
+                <p>Gender:</p>
 
-                <input type="radio" name="gender" id="male" required>
+                <input type="radio" name="gender" id="male" value="male" required>
                 <label for="male">Male</label>
 
-                <input type="radio" name="gender" id="female" required>
+                <input type="radio" name="gender" id="female" value="female" required>
                 <label for="female">Female</label>
             </div>
             <div>
-                <label>Country:</label>
-                <select name="country">
+                <label for="countries">Country:</label>
+                <select name="countries" id="countries">
                     <option value="usa" selected>USA</option>
                     <option value="china">China</option>
                     <option value="italy">Italy</option>
@@ -48,8 +48,8 @@
                 </select>
             </div>
             <div>
-                <label>Experience level:</label>
-                <select name="levels">
+                <label for="levels">Experience level:</label>
+                <select name="levels" id="levels">
                     <option value="0to2" selected>0 to 2 years</option>
                     <option value="2to5">2 to 5 years</option>
                     <option value="5++">5+ years</option>
@@ -60,12 +60,12 @@
                 <input type="text" name="languages" id="languages" placeholder="Languages" required>
             </div>
             <div>
-                <label for="">Bio:</label>
-                <textarea rows="4" cols="30" required></textarea>
+                <label for="bio">Bio:</label>
+                <textarea id="bio" rows="4" cols="30" required></textarea>
             </div>
             <div>
                 <input type="checkbox" name="agree" id="agree" required>
-                <a href=""><label for="agree">Agree to Terms & Conditionals</label></a>
+                <a href=""><label for="agree">Terms & Conditionals</label></a>
             </div>
             <div>
                 <button type="submit">Sign Up</button>
